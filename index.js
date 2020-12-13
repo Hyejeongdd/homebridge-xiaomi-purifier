@@ -31,12 +31,12 @@ function MiAirPurifier(log, config) {
 	this.humidity = undefined;
 	this.aqi = undefined;
 
-	//Korea PM 2.5 standard value
+	// China PM 2.5 standard value
 	this.levels = [
-		[76, Characteristic.AirQuality.POOR],
-		[36, Characteristic.AirQuality.INFERIOR],
-		[16, Characteristic.AirQuality.FAIR],
-		[6, Characteristic.AirQuality.GOOD],
+		[151, Characteristic.AirQuality.POOR],
+		[116, Characteristic.AirQuality.INFERIOR],
+		[76, Characteristic.AirQuality.FAIR],
+		[36, Characteristic.AirQuality.GOOD],
 		[0, Characteristic.AirQuality.EXCELLENT]
 	];
 
